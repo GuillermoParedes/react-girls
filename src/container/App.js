@@ -7,7 +7,7 @@ import FeaturesData from "../api/features.json";
 import ExperienceData from "../api/experience.json";
 function App() {
   return (
-    <Container>
+    <Container className="d-flex align-items-center">
       <Row>
         <Col xs="4" className="bg-success text-center pt-5 pb-5">
           <Profile
@@ -19,7 +19,7 @@ function App() {
             <Feature key={i} {...ele} />
           ))}
         </Col>
-        <Col xs="8" className="bg-dark text-center  pt-5 pb-5">
+        <Col xs="8" className="bg-light text-center  pt-5 pb-5">
           {ExperienceData.map((ele, i) => (
             <Experience key={i} {...ele} />
           ))}
