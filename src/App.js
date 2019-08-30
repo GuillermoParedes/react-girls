@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './reactBolivia.png';
 import './App.css';
-import { Button } from 'reactstrap';
 
 function App() {
   return (
