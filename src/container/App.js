@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Profile from "../components/Profile";
+import Feature from "../components/Feature";
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
             job="Software Frontend Engineer"
           />
           <hr className="bg-white" />
+          <Feature
+            title={"My Background"}
+            description="I'm a software development engineer with more 5 years ago of experience."
+          />
         </Col>
         <Col xs="8" className="bg-dark text-center"></Col>
       </Row>
