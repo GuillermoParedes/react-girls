@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './reactBolivia.png';
 import './App.css';
 import { Button } from 'reactstrap';
 
@@ -7,8 +7,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Button>asdasd</Button>
+        <h2>React Bolivia</h2>
+        <h3>React GIRLS WORKSHOP</h3>
+        <img src={logo} className="App-logo" alt="logo" height="100"/>
       </header>
     </div>
   );
