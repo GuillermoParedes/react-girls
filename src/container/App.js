@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Profile from "../components/Profile";
 import Feature from "../components/Feature";
-
+import FeaturesData from "../api/features.json";
 function App() {
   return (
     <Container>
@@ -13,10 +13,9 @@ function App() {
             job="Software Frontend Engineer"
           />
           <hr className="bg-white" />
-          <Feature
-            title={"My Background"}
-            description="I'm a software development engineer with more 5 years ago of experience."
-          />
+          {FeaturesData.map((ele, i) => (
+            <Feature key={i} {...ele} />
+          ))}
         </Col>
         <Col xs="8" className="bg-dark text-center"></Col>
       </Row>
