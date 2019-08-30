@@ -2,7 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Profile from "../components/Profile";
 import Feature from "../components/Feature";
+import Experience from "../components/Experience";
 import FeaturesData from "../api/features.json";
+import ExperienceData from "../api/experience.json";
 function App() {
   return (
     <Container>
@@ -17,7 +19,11 @@ function App() {
             <Feature key={i} {...ele} />
           ))}
         </Col>
-        <Col xs="8" className="bg-dark text-center"></Col>
+        <Col xs="8" className="bg-dark text-center  pt-5 pb-5">
+          {ExperienceData.map((ele, i) => (
+            <Experience key={i} {...ele} />
+          ))}
+        </Col>
       </Row>
     </Container>
   );
