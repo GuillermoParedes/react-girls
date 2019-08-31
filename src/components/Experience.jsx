@@ -1,15 +1,8 @@
 import React from "react";
-import { Button } from "reactstrap";
-
 const Experience = ({ title, experiences }) => {
   return (
     <section className="mb-5 p-relative ">
-      <h4 className="text-left text-uppercase text-success">
-        {title}
-        <Button className="ml-2" outline color="success">
-          Add
-        </Button>
-      </h4>
+      <h4 className="text-left text-uppercase text-success">{title}</h4>
       <hr className="bg-dark" />
       {experiences.map((e, i) => {
         return (
