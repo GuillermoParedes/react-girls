@@ -7,14 +7,16 @@ import {
   ModalFooter,
   Form,
   FormGroup,
-  Input
+  Input,
+  CustomInput,
+  Label
 } from "reactstrap";
 class Modale extends React.Component {
   constructor(props) {
     super(props);
     this.initialState = {
       title: "",
-      description: ""
+      knowledge: 10
     };
     this.state = this.initialState;
   }
@@ -22,7 +24,6 @@ class Modale extends React.Component {
     const { target } = event;
     const value = target.value;
     const { name } = target;
-
     this.setState({
       [name]: value
     });
@@ -35,6 +36,8 @@ class Modale extends React.Component {
         <ModalBody>
           <Form>
             <FormGroup>
+              <Label for="exampleCustomRange">Title</Label>
+
               <Input
                 type="text"
                 name="title"
@@ -43,12 +46,17 @@ class Modale extends React.Component {
                 placeholder="Title"
                 onChange={e => this.handleChange(e)}
               />
-              <Input
-                type="text"
-                name="description"
-                id="description"
-                value={this.state.description}
-                placeholder="Description"
+            </FormGroup>
+            <FormGroup>
+              <Label for="exampleCustomRange">
+                Knowledge{" "}
+                <span className="text-success">{this.state.knowledge}</span>
+              </Label>
+              <CustomInput
+                type="range"
+                id="knowledge"
+                name="knowledge"
+                value={this.state.knowledge}
                 onChange={e => this.handleChange(e)}
               />
             </FormGroup>
@@ -60,6 +68,10 @@ class Modale extends React.Component {
             outline
             onClick={e => {
               e.preventDefault();
+              this.setState({
+                title: "",
+                knowledge: 10
+              });
               save(this.state);
             }}
           >

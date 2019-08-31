@@ -5,6 +5,8 @@ import Feature from "../components/Feature";
 import Experience from "../components/Experience";
 import FeaturesData from "../api/features.json";
 import ExperienceData from "../api/experience.json";
+
+import Skills from "./Skills";
 function App() {
   return (
     <Container className="container d-flex h-100">
@@ -19,13 +21,13 @@ function App() {
             <Feature key={i} {...ele} />
           ))}
         </Col>
-        <Col
-          xs="9"
-          className="bg-light text-center  pt-5 pb-5 border border-success"
-        >
+        <Col xs="9" className="bg-light pt-5 pb-5 border border-success">
           {ExperienceData.map((ele, i) => (
             <Experience key={i} {...ele} />
           ))}
+
+          <hr className="bg-white" />
+          <Skills />
         </Col>
       </Row>
     </Container>
