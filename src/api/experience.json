@@ -12,30 +12,29 @@
     }]
   },
   {
-    "title": "Career Background",
+    "title": "Education",
     "experiences": [{
-      "title": "Digital Strategist",
-      "descriptions": [{
-          "value": " Develops, implements and manages marketing campigns for various clients."
-        },
-        {
-          "value": "Works with graphic designers for web design and digital storetelling."
-        }
-      ]
-    }]
-  },
-  {
-    "title": "Career Background",
-    "experiences": [{
-      "title": "Digital Strategist",
-      "descriptions": [{
-          "value": " Develops, implements and manages marketing campigns for various clients."
-        },
-        {
-          "value": "Works with graphic designers for web design and digital storetelling."
-        }
-      ]
-    }]
+        "title": "UMSA",
+        "descriptions": [{
+          "value": "Software Engineer."
+        }]
+      },
+      {
+        "title": "UMSA",
+        "descriptions": [{
+          "value": "Software Engineer."
+        }]
+      }, {
+        "title": "UMSA",
+        "descriptions": [{
+          "value": "Software Engineer."
+        }]
+      }, {
+        "title": "UMSA",
+        "descriptions": [{
+          "value": "Software Engineer."
+        }]
+      }
+    ]
   }
-
 ]

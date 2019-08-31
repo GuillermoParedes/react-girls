@@ -7,9 +7,9 @@ import FeaturesData from "../api/features.json";
 import ExperienceData from "../api/experience.json";
 function App() {
   return (
-    <Container className="d-flex align-items-center">
-      <Row>
-        <Col xs="4" className="bg-success text-center pt-5 pb-5">
+    <Container className="container d-flex h-100">
+      <Row className="align-self-center">
+        <Col xs="3" className="bg-success text-center pt-5 pb-5">
           <Profile
             name="Guillermo Paredes Torrez"
             job="Software Frontend Engineer"
@@ -19,7 +19,10 @@ function App() {
             <Feature key={i} {...ele} />
           ))}
         </Col>
-        <Col xs="8" className="bg-light text-center  pt-5 pb-5">
+        <Col
+          xs="9"
+          className="bg-light text-center  pt-5 pb-5 border border-success"
+        >
           {ExperienceData.map((ele, i) => (
             <Experience key={i} {...ele} />
           ))}

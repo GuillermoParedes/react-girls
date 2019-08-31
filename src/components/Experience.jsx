@@ -2,8 +2,8 @@ import React from "react";
 
 const Experience = ({ title, experiences }) => {
   return (
-    <section className="mb-5 mt-5">
-      <h4 className="text-uppercase text-success">{title}</h4>
+    <section className="mb-5">
+      <h4 className="text-left text-uppercase text-success">{title}</h4>
       <hr className="bg-dark" />
       {experiences.map((e, i) => {
         return (
